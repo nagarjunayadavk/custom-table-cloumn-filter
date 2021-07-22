@@ -1,3 +1,5 @@
+@import url("css/icon.css");
+@import url("css/material.css");
 .App {
   text-align: center;
 }
@@ -35,4 +37,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.filter{
+  
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+}
+.filter-inner{
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.87);;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  opacity: 1;
+  transform: none;
+  transition: opacity 292ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 194ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+
+ul li{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
 }
